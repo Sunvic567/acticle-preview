@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 100%;
+    min-height:100vh ;
+    background: #dadae6;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .card{
+    width: 90%;
+    margin: 1rem;
+  background: #fff;
+  border-radius: 15px;
+  border: 0;
+  outline: 0;
+}
+
+#image{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.text-area{
+    color: #252424;
+    padding: 1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+    #text-area__p{
+        margin-top: 2rem;
+          font-weight: 400;
+      }
+      
+      .profile{
+        display: flex;
+        align-content: center;
+        width: 100%;
+         justify-content: space-between;
+         margin-top: 2rem;
+         position: relative;
+      }
+      .profile-image{
+        display: flex;
+        align-content: center;
+      }
+      .profile-image img{
+       height: 50px;
+        border-radius: 50%;
+      }
+      .profile-image p{
+        margin: 0.5rem;
+    }
+    .profile-image span{
+        font-weight: 600;
+    }
+ 
+      
+    #share-icon{
+         position: absolute;
+        bottom: 6px;
+        right: 6px;  
+        background: #b4b4cc;
+        border-radius: 50%;
+        padding: 0.2rem;
+    }
+     .hidden-icon{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-content: center;
+        padding: 1rem;
+        border-radius: 0 0 15px 15px;
+        background: #5e5c5c;
+        color: #fff;
+        display: none;
+       
+     }
+     #retune-icon{
+        background-color: #b4b4cc;
+        border-radius: 50%;
+        padding: 0.2rem;
+     }
+  
+@media screen and (min-width: 1024px){
+   .container{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+   }
+    .card{
+        display: flex;
+       max-width: 900px;
+      
+    }
+    .text-area{
+        flex-basis: 45%;
+        margin-left: 0.5rem;
+    }
+    .image-area{
+        flex-basis: 50%;
+    }
+    #image{
+        height: 100%;
+        border-radius: 15px 0 0 15px;
+    }
+    .bottom{
+        position: relative;
+    }
+    .hidden-icon{
+      align-items: center;
+        border-radius: 15px;
+        text-align:start;
+       padding: 1.5rem;
+        width: 15%;
+        height: 10px;
+        position: absolute;
+        bottom:210px;
+        right: 200px;
+    }
+    #retune-icon{
+        display: none;
+    }
+    
+}
